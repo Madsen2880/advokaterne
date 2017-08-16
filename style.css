@@ -10,20 +10,30 @@ body {
 .grid {
     background-color: #e8e8e8;
     display: grid;
-    grid-template-columns: 1fr 800px 400px 1fr;
+    grid-template-columns: 1fr 700px 400px 1fr;
     grid-template-areas:
     "header header header header"
     ". h2 h2 ."
     ". main main ."
     ". footer footer ."
-;
+    ;
+
 }
 
 p, figcaption {
     font-family: Verdana sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     color: #58595b;
 }
+
+h2, h3 {
+    font-family: Verdana sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #58595b;
+    text-transform: uppercase;
+}
+
 
 /*************************************************************************************************/
 
@@ -43,6 +53,8 @@ header h1{
     justify-self: center;
     align-self: center;
     font-size: 28px;
+    margin-left: 50px;
+
 }
 
 /*************************************************************************************************/
@@ -50,10 +62,11 @@ header h1{
     grid-area: h2;
     align-self: center;
     justify-self: center;
-    font-size: 60px;
+    font-size: 52px;
     border-bottom: 5px solid black;
     margin-bottom: 30px;
     text-align: center;
+    padding: 20px 0 20px 0;
 }
 
 /*'''''''''''''''''''''''''''''''''''******* Nav *************************************************/
@@ -102,13 +115,14 @@ header nav ul li a:hover {
 
 /*************************************************************************************************/
 
-/****************************************Main**************************************************/
+/****************************************Main forside**************************************************/
 main {
     display:grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
     "services sidebar"
-;
+    "blog sidebar"
+    ;
     grid-area: main;
 }
 
@@ -116,19 +130,83 @@ main {
     grid-area: services;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 500px;
 
+    grid-gap: 25px;
+    padding: 30px 0 0 30px;
 }
 
-#services figure {
-    padding: 30px;
+#services h2 {
+    grid-column: span 2;
 }
 
 #asside {
     grid-area: sidebar;
+    padding: 30px 0;
+    max-width: 90%;
 }
 
-#asside #omOs,#risRos,#nyhedsbrev {
-    padding: 20px;
+#asside #omOs,#risRos {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+
+}
+#asside h2 {
+    margin-bottom: 25px;
+}
+#omOs img {
+    margin-top: 20px;
+}
+#services a {
+    color: #58595b;
+    text-decoration: none;
+}
+
+#services a:hover {
+    color: cornflowerblue;
+}
+
+#risRos a {
+    color: #58595b;
+    text-decoration: none;
+}
+
+#risRos p {
+    padding-bottom: 20px;
+}
+
+#risRos a:hover {
+    color: cornflowerblue;
+
+}
+
+#risRos sup {
+    text-align: right;
+}
+
+#blog h3 {
+    margin-bottom: 10px;
+}
+
+#blog {
+    grid-area: blog;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    padding-left: 30px;
+}
+#blog img {
+    float: left;
+    padding-right: 10px;
+}
+
+#blog article {
+    grid-column: span 2;
+}
+
+#blog, #nyhedsbrev {
+    padding-bottom: 25px;
 }
 
 
@@ -137,8 +215,25 @@ main {
 
 /****************************************Footer**************************************************/
 
-
 footer {
     grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    padding: 40px;
+    border-top: 2px solid black;
+    width: 100%;
+}
 
+footer #social i {
+    font-size: 22px;
+    color: #58595b;
+    padding-left: 15px;
+}
+
+footer p {
+    font-size: 18px;
+    color: #58595b;
+    grid-column: end;
 }
