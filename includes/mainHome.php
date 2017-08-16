@@ -1,6 +1,6 @@
-<h4 class="htoeren">VI ER BILLIGERE og <br> VI TAGER ALLE OPGAVER STORE SOM SMÅ</h4>
 
-<main>
+
+
     <div id="services">
         <h2>Services</h2>
         <figure><img src="img/agent.jpg" alt="arbejde på kontoret">
@@ -67,4 +67,3 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi atque cupiditate facere fugiat fugit illum iste magnam nam necessitatibus nesciunt, numquam perferendis perspiciatis saepe suscipit temporibus voluptas. Magni, maxime?</p>
         </article>
     </div>
-</main>
