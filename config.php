@@ -19,9 +19,11 @@ spl_autoload_register('ClassLoader');
 
 use Database\DB;
 use \Data\Navigation;
+use \Data\Services;
 
 $db = new DB('mysql:host='._DB_HOST_.';dbname='._DB_NAME_.';charset=utf8',_DB_USER_,_DB_PASSWORD_);
 $nav = new Navigation($db);
+$art = new Services($db);
 
 //// install scripts
 //$nav->install();<?php
