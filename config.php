@@ -20,10 +20,12 @@ spl_autoload_register('ClassLoader');
 use Database\DB;
 use \Data\Navigation;
 use \Data\Services;
+use \Data\Blog;
 
 $db = new DB('mysql:host='._DB_HOST_.';dbname='._DB_NAME_.';charset=utf8',_DB_USER_,_DB_PASSWORD_);
 $nav = new Navigation($db);
 $art = new Services($db);
+$blog = new Blog($db);
 
 //// install scripts
 //$nav->install();<?php
