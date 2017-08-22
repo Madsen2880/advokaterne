@@ -25,7 +25,7 @@ p, figcaption {
     color: #58595b;
 }
 
-h2, h3 {
+h2, h3, h5 {
     font-family: Verdana sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -270,6 +270,39 @@ main {
     padding-top: 40px;
     margin-bottom: 30px;
 }
+
+/**************************************** mainBlog *********************************/
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 700px 300px 1fr;
+    grid-template-areas:
+    ". blog sidebar ."
+    ". blog sidebar ."
+    ". blog sidebar ."
+;
+}
+
+.blog3 {
+    grid-area: blog;
+}
+
+.blog3 article {
+    padding: 20px 20px;
+}
+
+.sidebar3 {
+    grid-area: sidebar;
+}
+
+.sidebar3 ul {
+    padding: 20px 15px 50px 15px;
+}
+
+.sidebar3 h3 {
+    margin-top: 20px;
+}
+
 
 /*************************************************************************************************/
 
