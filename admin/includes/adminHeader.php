@@ -2,10 +2,10 @@
 
 <nav>
     <ul>
-        <li><a href="#">Forside</a></li>
-        <li><a href="#">Content</a></li>
-        <li><a href="#">Users</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="adminHome.php">Forside</a></li>
+        <li><a href="adminContent.php">Content</a></li>
+        <li><a href="adminUsers.php">Users</a></li>
+        <li><a href="adminAbout.php">About</a></li>
         <li><a href="#">Log Ind</a></li>
     </ul>
 </nav>

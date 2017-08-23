@@ -1,7 +1,17 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: 57130
- * Date: 21-08-2017
- * Time: 10:33
- */
+
+?>
+
+
+<div class="groups">
+
+    <ul>
+        <li><a href="#">Edit Services</a></li>
+        <li><a href="#">Edit Blog</a></li>
+        <li><a href="#"></a>Edit info</li>
+        <li><a href="#"></a>Edit Users</li>
+        <li><a href="#"></a>Log out</li>
+    </ul>
+
+
+</div>

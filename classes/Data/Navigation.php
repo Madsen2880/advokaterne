@@ -19,8 +19,8 @@ class Navigation
     public function getPage($id)
     {
         $result = $this->db->single(
-            "SELECT page_controller.`path` FROM pages
-				INNER JOIN page_controller ON page_controller.`page_controller_id` = pages.`fk_controller_id`
+            "SELECT page_controllers.`page_path` FROM pages
+				INNER JOIN page_controllers ON page_controllers.`page_controller_id` = pages.`fk_controller_id`
 				WHERE pages.`page_id` = :id",
             [':id' => $id]
         );

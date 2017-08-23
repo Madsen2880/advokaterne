@@ -1,6 +1,6 @@
 <?php
 define('_DB_HOST_', 'localhost');
-define('_DB_NAME_', 'advo_db');
+define('_DB_NAME_', 'advokaterne');
 define('_DB_USER_', 'root');
 define('_DB_PASSWORD_', '');
 define('_DB_PREFIX_', '');
